@@ -7,12 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
     "flowbite": "^2.5.2",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.509.0",
     "postcss": "^8.4.49",
     "quill": "^2.0.3",
     "react": "^18.2.0",

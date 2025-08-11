@@ -6,6 +6,7 @@ import Home from './Home';
 import Dictionaries from './Dictionaries';
 import Glosarium from './Glosarium';
 import About from './About';
+import ChatWidget from './ChatWidget';
 import Contact from './Contact';
 import Blog from './Blog';
 import BlogDetail from './BlogDetail';
@@ -50,6 +51,7 @@ const AppWithRouter = () => {
     return (
         <>
             {shouldShowNavbar && <Navbar />}
+            <ChatWidget />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/dictionaries" element={<Dictionaries />} />

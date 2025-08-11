@@ -11,6 +11,7 @@ const bannerRoutes = require('./routes/bannerRoutes');
 const kamusRoutes = require('./routes/kamusRoutes');
 const glosariumRoutes = require('./routes/glosariumRoutes');
 const loginpageRoutes = require('./routes/loginpageRoutes');
+const predictRoutes = require('./api/predict');
 const path = require('path');
 const app = express();
 
@@ -30,6 +31,7 @@ app.use('/api/banner', bannerRoutes);
 app.use('/api/halaman_kamus', kamusRoutes);
 app.use('/api/halaman_glosarium', glosariumRoutes);
 app.use('/api/halaman_login', loginpageRoutes);
+app.use('/api/predict', predictRoutes);
 
 // Start server
 const PORT = 5000;
